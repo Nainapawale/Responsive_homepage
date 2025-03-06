@@ -1,0 +1,29 @@
+.hero-explore {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Adjust gap */
+  width: fit-content;
+  margin-top: 90%;
+  padding: 10px 20px;
+  padding-left: 30px;
+  border-radius: 60px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero-explore img {
+  width: 40px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s ease-in-out;
+}
+
+.hero-explore:hover img {
+  transform: translateX(5px); /* Small animation on hover */
+}
+
+.hero-explore p {
+  color: #292929;
+  font-size: 20px;
+  font-weight: 500;
+}
