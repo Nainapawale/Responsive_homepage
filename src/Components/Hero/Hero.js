@@ -4,6 +4,8 @@ import ads1 from "../../assets/ads1.jpg";
 import burger11 from "../../assets/burger11.jpg";
 import burger12 from "../../assets/burger12.jpg";
 import burger13 from "../../assets/burger13.jpg";
+import burger14 from "../../assets/burger14.jpg";
+import burger15 from "../../assets/burger15.jpg";
 
 const Hero = () => {
   return (
@@ -16,13 +18,13 @@ const Hero = () => {
       {/* Items Section */}
       <div className="items-section">
         <div className="item-card">
-          <img src={burger12} alt="Burger" />
+          <img src={burger11} alt="Burger" />
           <h3>Cheese Burger</h3>
           <p>$5.99</p>
         </div>
 
         <div className="item-card">
-          <img src={burger13} alt="Pizza" />
+          <img src={burger12} alt="Pizza" />
           <h3>Spicy Pizza</h3>
           <p>$8.99</p>
         </div>
@@ -32,13 +34,13 @@ const Hero = () => {
           <p>$8.99</p>
         </div>
         <div className="item-card">
-          <img src={burger11} alt="Fries" />
+          <img src={burger14} alt="Fries" />
           <h3>Crispy Fries</h3>
           <p>$3.99</p>
         </div>
 
         <div className="item-card">
-          <img src={burger13} alt="Pizza" />
+          <img src={burger15} alt="Pizza" />
           <h3>Spicy Pizza</h3>
           <p>$8.99</p>
         </div>
