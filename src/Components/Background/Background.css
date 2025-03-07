@@ -1,13 +1,40 @@
-.background {
-  height: 100%;
+.background-container {
+  position: relative;
   width: 100%;
-  float: left;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  padding: none;
-  position: fixed;
-  object-fit: cover;
-  z-index: -1;
+  height: 100vh; /* Full screen height */
+  display: flex;
+  align-items: center;
 }
+
+.background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover full background */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Send it to the back */
+}
+
+.hero2 {
+  position: absolute;
+  right: 4%; /* Move to the right */
+  top: 25%; /* Adjust height */
+  width: 40%; /* Set size */
+  height: 60%;
+}
+
+.hero1{
+  position: absolute;
+  right: 10%; /* Adjust overlap */
+  top: 30%; /* Move down */
+  width: 30%; /* Smaller size */
+  height: 50%;
+}
+
+ .background_head{
+  font-size: 25px;
+  padding:40px;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+ }
