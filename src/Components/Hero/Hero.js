@@ -1,35 +1,47 @@
 import React from "react";
 import "./Hero.css";
-import arrow from "../../assets/arrow.png";
+import ads1 from "../../assets/ads1.jpg";
+import burger11 from "../../assets/burger11.jpg";
+import burger12 from "../../assets/burger12.jpg";
+import burger13 from "../../assets/burger13.jpg";
 
-const Hero = ({ heroData, heroCount, setHeroCount }) => {
+const Hero = () => {
   return (
-    <div className="hero">
-      <div className="hero-text">
-        <p>{heroData.text1}</p>
-        <p>{heroData.text2}</p>
+    <div className="hero-container">
+      {/* Background Section */}
+      <div className="hero-background">
+        <img src={ads1} alt="Hero Background" />
       </div>
 
-      <div className="hero-explore">
-        <p>Exlpore the features</p>
-        <img src={arrow} alt="Explore" />
-      </div>
+      {/* Items Section */}
+      <div className="items-section">
+        <div className="item-card">
+          <img src={burger12} alt="Burger" />
+          <h3>Cheese Burger</h3>
+          <p>$5.99</p>
+        </div>
 
-      <div className="hero-dot-play">
-        <ul className="hero-dots">
-          <li
-            onClick={() => setHeroCount(0)}
-            className={heroCount === 0 ? "hero-dot orange" : "hero-dot"}
-          ></li>
-          <li
-            onClick={() => setHeroCount(1)}
-            className={heroCount === 1 ? "hero-dot orange" : "hero-dot"}
-          ></li>
-          <li
-            onClick={() => setHeroCount(2)}
-            className={heroCount === 2 ? "hero-dot orange" : "hero-dot"}
-          ></li>
-        </ul>
+        <div className="item-card">
+          <img src={burger13} alt="Pizza" />
+          <h3>Spicy Pizza</h3>
+          <p>$8.99</p>
+        </div>
+        <div className="item-card">
+          <img src={burger13} alt="Pizza" />
+          <h3>Spicy Pizza</h3>
+          <p>$8.99</p>
+        </div>
+        <div className="item-card">
+          <img src={burger11} alt="Fries" />
+          <h3>Crispy Fries</h3>
+          <p>$3.99</p>
+        </div>
+
+        <div className="item-card">
+          <img src={burger13} alt="Pizza" />
+          <h3>Spicy Pizza</h3>
+          <p>$8.99</p>
+        </div>
       </div>
     </div>
   );
